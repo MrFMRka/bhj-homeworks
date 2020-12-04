@@ -11,10 +11,10 @@ modalClose[0].onclick = function () {
 const showSucces = document.querySelector('.show-success');
 const modalSuccess = document.querySelector('#modal_success');
 showSucces.onclick = function () {
+  modalMain.classList.remove("modal_active");
   modalSuccess.classList.add("modal_active");
 };
 
 modalClose[1].onclick = function () {
   modalSuccess.classList.remove("modal_active");
-  modalMain.classList.remove("modal_active");
 };
